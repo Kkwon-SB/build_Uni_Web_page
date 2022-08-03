@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상명 - 신입생 대학 백서</title>
+  <link rel="stylesheet" href="css/mainpage.css">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+    h1 {
+      font-family: 'Nanum Pen Script', cursive;
+      text-align: center;
+      font-weight: 300;
+    }
+
+    .item{
+      float: left;
+    }
+    .item > ul {
+      font-family: 'Nanum Pen Script', cursive;
+      font-size:1.0em;
+      color:rgb(0, 0, 0); 
+      padding-left: 25px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: none;
+    }
+    .item:hover > ul{
+      background-color: rgba(187, 168, 168, 0.234);
+      color:rgb(0, 0, 0);  
+      display: block;
+    }
+    .item:hover > li {
+      
+      float: left;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">    
+    <header>
+      <div id="logo">
+        <a href="main-page.html"><h1>상명 백서</h1></a>
+      </div>
+      <nav> 
+       
+           
+        <ul id="topMenu">
+          <li> <h1 style="color: rgb(162, 239, 239);">&ensp;개강까지 D - <span class="accent" id="result",></span> &emsp;</h1></li>
+         <script src="js/time2.js"></script>
+          <li style="color: rgb(170, 158, 239);"><h1 class = "h1-clock"></h1></li>
+          <script src="js/time.js"></script>
+
+        </ul>
+      </nav>
+    
+    </header>
+    <main class="contents">
+       <div >
+         <script>
+           var name = prompt("본인의 이름을 입력해 주세요 :)","상명")
+           document.write("<h1 >"+name+" 슴우님  환영합니다 :)</h1>");
+         </script>
+      
+        
+        <ul class="prod-list">
+          <div id="container2">
+            <li>
+              <a href="scholl-life.html" height="5" width="10" >
+                <img src="images/register.png" alt="위의 이미지를 누르면 연결됩니다.">
+              <a>
+              <div class="caption">
+                <a href="scholl-life.html" height="5" width="10" >
+                  <h2>학교생활</h2>
+             
+                  <p>#수강신청 #기숙사 #셔틀버스</p>
+                </a>
+              </div>
+            </li>
+          </div>
+
+
+          <div id="container2">
+            <li>
+              <img src="images/rentred-house.jpg">
+              <div class="caption">
+                <a href="living-life.html" height="5" width="10" >
+                  <h2>생활 꿀팁</h2>
+                 
+                  <p>#1인분 요리 #꿀팁</p>
+                </a>
+              </div>
+            </li>
+          </div>  
+
+
+          <h1>이미지 링크를 통해 다양한 정보를 얻어가세요!</h1>
+          <div id="container2">
+            <li>
+              <img src="images/study.jpg">
+              <div class="caption">
+                <a href="living-items.html" height="5" width="10">
+                  <h2>생활 꿀템</h2>
+                  <p>#나의 삶을 한층 더 완벽하게</p>                
+                </a>
+              </div>
+           </li>
+          </div>
+          <div id="container2">
+            <li>
+              <img src="images/qna3.jpg">
+              <div class="caption">
+                <a href="noticeboard.html" height="5" width="10" >
+                  <h2>게시판</h2>
+                  <p>#학교소개영상 #OT영상 #대학생활 안내</p> 
+                </a>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </main>
+
+    <footer>    
+      <section id="bottomMenu">
+        <ul>
+          <li><a href="#">학교소개</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">개발자 정보</a></li>
+          <li><a href="#">저작권</a></li>
+        </ul>
+      </section>   
+    </footer>  
+  </div> 
+</body>
+</html>

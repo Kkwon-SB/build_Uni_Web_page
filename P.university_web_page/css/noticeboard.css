@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+* {
+  margin:0;   
+  padding:0;  
+  box-sizing: border-box;  
+}
+a {
+  text-decoration:none; 
+}
+ul {
+  list-style: none;
+}
+
+#container {
+  margin:0 auto; 
+  width:1200px;   
+}
+
+.item > ul {
+  font-weight: 500;
+  font-family: 'Nanum Pen Script', cursive;
+  line-height: 2em;
+  font-size:1.8em;
+  color:rgb(0, 0, 0); 
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+}
+.item:hover > ul{
+ 
+  
+  background-color: rgba(104, 154, 241, 0.897);
+  display: block;
+  float: left;
+}
+
+
+header{
+  width:100%;   
+  height:100px;   
+  background-color:rgba(0, 31, 108, 0.931);
+}
+
+
+#logo{ 
+  float:left;  
+  width:250px;  
+  height:100px;  
+  line-height:100px; 
+  padding-left:20px; 
+}
+
+#logo h1 {
+  font-family: 'Nanum Pen Script', cursive;
+  font-weight:lighter;
+  font-size:60px;  
+  color:#fff;  
+  text-shadow:0 -1px 0 #222; 
+}
+
+nav{  
+  float:right;  
+  width:900px; 
+  height:100px;  
+  padding-top:40px;   
+}
+#topMenu {  
+  height:60px; 
+}
+#topMenu > li {
+  float:left; 
+  font-weight: 700;
+  position: relative;  
+}
+#topMenu > li > a{
+  display:block; 
+  font-size:1.2em;
+  color:#fff; 
+  padding:20px 60px;  
+}
+#topMenu > li > a:hover {
+  color:#1fa8f8;
+  text-shadow:0 -2px rgb(23, 25, 26);
+}
+
+
+.contents {
+  width:1000px;
+  margin:50px auto;
+}
+main > section {
+  margin-top:60px;   
+}
+main h2 {    
+  font-size:1.5em;
+  line-height: 2.0;
+}
+main div {
+  padding: 50px;
+  margin-top:30px;
+  line-height: 3.0;
+
+}
+main h3 {
+  font-size:1.2em;
+  line-height:2.2;
+}
+#detail {
+  padding: 200px;
+  margin: 200px;
+  line-height:2.2;
+}
+
+.detail p {
+  line-height: 2.0;
+  color:#222;
+}
+.detail > img {
+
+  float:left; 
+  width: 240px;
+  height: 160px;
+  margin-right:50px;
+  border-radius:10px; 
+}
+
+ .detail1 > img { 
+
+  float:left; 
+  width: 350px;
+  height: 250px;
+  margin-left: 300px;
+  margin-right:400px;
+  border-radius:10px; 
+} 
+
+
+.schedule h4 {
+  font-size:1.2em;
+}
+.schedule ol {
+  list-style:circle;
+}
+.schedule ul li { 
+  line-height: 2;
+}
+
+footer{   
+  width:1200px;   
+  height:100px; 
+  border-top:2px solid #222;
+}
+#bottomMenu{
+  width:100%;
+  height:20px;
+  margin-left:60px;
+}
+#bottomMenu ul {
+  margin-top:15px;  
+}
+#bottomMenu ul li{
+  float:left; 
+  padding:5px 20px;
+  border-right:1px solid #ddd; 
+}
+#bottomMenu ul li:last-child{
+  border:none; 
+}
+#bottomMenu ul li a, #bottomMenu ul li a:visited {  
+  font-size:15px;  
+  color:#666;   
+} 
+
+
+.board_list_wrap {
+  padding: 50px;
+}
+
+.board_list_head,
+.board_list_body .item {
+  padding: 10px 0;
+  font-size: 0;
+}
+
+.board_list_head {
+  border-top: 2px solid green;
+  border-bottom: 1px solid #ccc;
+}
+
+.board_list_body .item {
+  border-bottom: 1px solid #ccc;
+}
+
+.board_list_head > div,
+.board_list_body .item > div {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+}
+
+.board_list_head > div {
+  font-weight: 600;
+}
+
+.board_list .num {
+  width: 10%;
+}
+
+.board_list .tit {
+  width: 55%;
+}
+
+.board_list_body div.tit {
+  text-align: left;
+}
+
+.board_list_body div.tit a:hover {
+  text-decoration: underline;
+}
+
+.board_list .writer {
+  width: 10%;
+}
+
+.board_list .date {
+  width: 15%;
+}
+
+.board_list .view {
+  width: 10%;
+}
+
+
+.paging {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.paging a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.paging a.bt {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  background-image: url(../images/page_bt.png);
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+
+.paging a.bt:hover {
+  background-color: #999;
+}
+
+.paging a.first {
+  background-position: 10px -40px;
+}
+
+.paging a.prev {
+  margin-right: 5px;
+  background-position: 10px 10px;
+}
+
+.paging a.next {
+  margin-left: 5px;
+  background-position: -40px 10px;
+}
+
+.paging a.last {
+  background-position: -40px -40px;
+}
+
+.paging a.num {
+  margin: 0 5px;
+}
+
+.paging a.num.on {
+  color: green;
+}
+
+.paging a.num:hover {
+  text-decoration: underline;
+}

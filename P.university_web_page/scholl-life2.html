@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상명 - 셔틀버스</title>
+  <link rel="stylesheet" href="css/school-life2.css">
+  <style>
+    p {
+      font-size: 20px;
+    }
+   
+
+    h1 {
+      font-family: 'Nanum Pen Script', cursive;
+    }
+    #container2 {
+      width:1100px;  /* 컨테이너의 너비 */
+      margin: 0 auto;
+      border:5px solid rgb(0, 0, 0);  /* 테두리 */
+      padding: 60px;
+      padding-top: 40px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      line-height: 45px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    table, th, td {
+  border:2px solid #222;  /* 표 테두리 */
+  border-collapse:collapse;  /* 테두리 1줄만 표시 */
+  
+}
+th, td {
+  padding:10px;  /* 셀 안쪽의 여백(패딩) */
+  text-align: center;
+  
+}
+th {
+  font-size:20px;  
+  font-weight:600;
+}
+td{
+  font-size: 19px;
+}
+    </style>
+</head>
+<body>
+  <div id="container">    
+    <header>
+      <div id="logo">
+        <a href="main-page.html"><h1>상명 백서</h1></a>
+      </div>
+      <nav>
+        <ul id="topMenu">
+          <li class="item"><a href="scholl-life.html">학교 생활</a>
+            <ul> 
+              <li><a href="scholl-life.html" style="color:black" >수강신청,기숙사신청</a></li>  
+              <li><a href="scholl-life1.html" style="color:black">학교시설</a></li>
+              <li><a href="scholl-life2.html" style="color:black">셔틀버스</a></li> 
+            </ul>
+          </li>
+
+          <li  class="item" ><a href="living-life.html">자취 꿀팁</a>
+            <ul>
+              <li><a href="living-life1.html" style="color:black">1인분 요리 - food</a></li>  
+              <li><a href="living-life2.html" style="color:black">자취 꿀팁 - tips</a></li>
+             
+            </ul>
+          </li>
+          <li><a href="living-items.html">자취 꿀템</a></li> 
+          <li><a href="noticeboard.html">게시판</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container2">
+      <h2>1. 운행 노선 / 시간 / 요금 (운행 기간 : 2021.03.09부터)</h2>
+        <table>
+          <colgroup>
+            <col style="width:230px ;" >
+            <col style="width: 270px;">
+            <col style="width: 170px;">
+            <col style="width: 110px;">
+            <col style="width: 200px;">
+          </colgroup>
+         
+          <tr style="background-color: rgb(240, 231, 250);">
+            <th>수업단계</th>
+            <th>승차장소</th>
+            <th>등교 출발시간</th>
+            <th>편도요금</th>
+            <th>하교 출발시간</th>
+          </tr>
+          <tr>
+            <th rowspan="4">대면수업 + <br>대면수업 기반 융합수업(사회적거리두기<br> 1단계, 1.5단계 2단계)</th>
+            <th>강남역 신분당선 5번 출구</th>
+            <td>07 : 15</td>
+            <td>5,000</td>
+            <td rowspan="4"><b>1. 월~목</b><br>15:30, 17:45, 18:00<br><b>2.금요일</b><br>15:30,18:00<br>경부 고속도로<br>죽전 간이정류장<br>신갈 간이정류장</td>
+          </tr>
+          <tr>
+            <th>경부고속도로 하행<br>죽전버스 정류장</th>
+            <td>07 : 30</td>
+            <td>5,000</td>
+          </tr>    
+          <tr>
+            <th>경부고속도로 하행<br>신갈버스 정류장</th>
+            <td>07 : 40</td>
+            <td>5,000</td>
+          </tr>    
+          <tr>
+            <th>법원사거리 타이어 뱅크 앞<br>영통입구고가도로</th>
+            <td>07 : 55</td>
+            <td>5,000</td>
+          </tr> 
+
+
+          <tr style="background-color: rgb(215, 245, 185);">
+            <th rowspan="4">대면수업 + <br>대면수업 기반 융합수업(사회적거리두기<br> 2.5단계)</th>
+            <th>강남역 신분당선 5번 출구</th>
+            <td>07 : 15</td>
+            <td>5,000</td>
+            <td rowspan="4"><b>1. 월~목</b><br>15:30, 18:00<br><b>2.금요일</b><br>18:00<br>경부 고속도로<br>죽전 간이정류장<br>신갈 간이정류장</td>
+          </tr>
+          <tr style="background-color: rgb(215, 245, 185);">
+            <th>경부고속도로 하행<br>죽전버스 정류장</th>
+            <td>07 : 30</td>
+            <td>5,000</td>
+          </tr>    
+          <tr style="background-color: rgb(215, 245, 185);">
+            <th>경부고속도로 하행<br>신갈버스 정류장</th>
+            <td>07 : 40</td>
+            <td>5,000</td>
+          </tr>    
+          <tr style="background-color: rgb(215, 245, 185);">
+            <th>법원사거리 타이어 뱅크 앞<br>영통입구고가도로</th>
+            <td>07 : 55</td>
+            <td>5,000</td>
+          </tr> 
+
+
+          <tr style="background-color: rgb(245, 222, 185);">
+            <th rowspan="3">대면수업 + <br>대면수업 기반 융합수업(사회적거리두기<br> 3단계)</th>
+            <th>강남역 신분당선 5번 출구</th>
+            <td>07 : 15</td>
+            <td>5,000</td>
+            <td rowspan="3"><b>1. 월~목</b><br>15:30, 18:00<br>>경부 고속도로<br>죽전 간이정류장<br>신갈 간이정류장</td>
+          </tr>
+          <tr style="background-color: rgb(245, 222, 185);">
+            <th>경부고속도로 하행<br>죽전버스 정류장</th>
+            <td>07 : 30</td>
+            <td>5,000</td>
+          </tr>    
+          <tr style="background-color: rgb(245, 222, 185);">
+            <th>경부고속도로 하행<br>신갈버스 정류장</th>
+            <td>07 : 40</td>
+            <td>5,000</td>
+          </tr>    
+       
+
+               
+        </table>
+        <br>
+
+        <h2>2 세부사항</h2>
+        <p>가. 운행일은 학기중 2021.03.09.(화요일)부터 주 5일이며, 평일 中 법정공휴일은 운행하지 않습니다.</p>
+        <p>나. 죽전, 신갈은 강남 출발차량이 정차하여 탑승 시키며 탑승시간에 다소 차이가 있을 수 있습니다.</p>
+        <p>다. 도로 교통사정에 의한 도착시간 지연으로 인한 수업결손은 책임지지 않습니다.</p>
+        <p>라. 위 기간 동안 매표소는 운영 되지 않으며 현금승차를 하여야 합니다. 다만 기존 승차권 소지자는
+          사용가능 합니다.</p>
+          <br>
+          <p>• 버스이용과 관련하여 불편한 사항이나 버스지연으로 인한 문의는 아래 연락처로 문의해 주시기 바랍니다.</p>
+          <p>- (주)성우관광여행사 ∥ 사무실 : 031-469-1511</p>
+          <p>- 학생복지팀 ∥ 사무실 : 041-550-502</p>
+
+        
+    </div>
+
+    <footer>    
+      <section id="bottomMenu">
+        <ul>
+          <li><a href="#">학교소개</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">개발자 정보</a></li>
+          <li><a href="#">저작권</a></li>
+        </ul>
+      </section>   
+    </footer>  
+  </div> 
+</body>
+</html>
