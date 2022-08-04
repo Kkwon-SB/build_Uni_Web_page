@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022_1 Class 3 Final #2</title>
+    <style> /* style 부분은 그대로 사용하세요. */
+        #region {
+            background: skyblue;
+            border: 3px solid black;
+            display: inline-block;
+            position: absolute;
+            top: 200px; left: 100px;
+            width: 300px; height: 300px;
+        }
+        #div {
+            display: inline-block;
+            border: 1px dotted red;
+            padding: 0px;
+            background: blue;
+            position: absolute;
+            top: 220px; left: 120px;
+            visibility: hidden; /* 값을 visible로 하면 보임 */
+        }	
+    </style>  
+    <script>
+        let count = 0; // 잡은 갯수 저장 변수
+        let timer; // 생성되는 타이머를 저장할 변수
+
+        let tcnt = 0;
+        let limit = document.getElementById('limit');
+        function start() {
+            // 게임을 시작하는 함수
+            let limit = document.getElementById('limit');
+            let span = document.getElementById('cnt');   
+            let div = document.getElementById('div');    
+            
+            let b1 = document.getElementsByTagName('body');
+            let b2 = b1.fir
+            count = 0;
+            span.innerHTML = "0";
+            span.style.color = 'black';
+            if(timer != null)
+                clearInterval(timer); // 타이머가 있는 경우 삭제
+            
+            timer = setInterval(randomMove, 1000);// 1초에 한번씩 randomMove 함수를 호출하는 타이머
+            
+            div.style.visibility = 'visible';
+
+        
+            // 코로나 그림을 포함한 div 객체에 'click' 이벤트 리스너(catchMethod) 연결
+            // 1)  (코드 작성하세요.)
+
+
+            
+        }
+        // function randomMove(){
+        //     let limit = document.getElementById('limit');
+        //     tcnt += 1;
+        //     alert(limit.value)
+        //     if(tcnt.value == limit.value)[
+        //         alert('tafkafa;sf')
+        //     ]
+
+        // }
+           
+        function catchMethod() {
+            let goal2 = document.getElementById('goal'); 
+            let img2 = div.firstElementChild;
+            // 코로나 이미지를 클릭하는 경우 동작되는 이벤트 리스너 함수
+            
+            alert("잡았습니다");
+            
+            // 잡은 갯수 1 증가
+            // 잡은 갯수의 글자색은 red
+            let span = document.getElementById('cnt'); 
+            span.innerHTML = count += 1;
+            span.style.color = 'red';
+            
+            if (goal2.value == count){
+                alert("미션 성공!!!!");
+                // randomMove.clearInterval();
+                img2.removeEventListener(randomMove);
+            }
+            // let ptag = document.getElementsByTagName('p');
+                                    // ptag.style.color = 'red';
+                                 
+            // 제한시간 내에 목표 갯수에 다다를 경우 alert로 "미션 성공!!!!" 띄우기
+
+            
+            // 타이머를 정지시키고 코로나 그림 숨기기
+
+            // 코로나 이미지를 포함하는 div에 클릭 이벤트 핸들러(catchMethod) 제거
+            // 이벤트 리스너 제거는 다음과 같이 수행함.
+
+            // (해당객체).removeEventListener('click', catchMethod);
+            // 2)
+
+            
+        }
+        
+        function randomMove() { 
+            // 코로나 위치를 영역 내에서 랜덤하게 움직이는 함수
+            let div = document.getElementById('div');
+            let img2 = div.firstElementChild;
+            let x = Math.floor(Math.random() * 270) + 100; // 코로나 랜덤 위치 
+            let y = Math.floor(Math.random() * 270) + 200;
+            
+            div.style.left = x + 'px';
+            div.style.top = y + 'px';
+
+            // 제한시간 1 줄이기
+            let limit = document.getElementById('limit');
+            
+            if(limit.value == 0){
+                alert("제한시간이 종료하여 미션에 실패하였습니다.")
+                img2.stopPropagation();
+                img2.removeEventListener(catchMethod);
+                // img2.removeChild(this)
+           
+            }else{
+                limit.value -= 1;
+            }
+
+
+            // 제한시간이 0이 되는 경우 
+            // 타이머를 정지시키고 "제한시간이 종료하여 미션에 실패하였습니다." 경고창 출력
+            // 코로나 이미지를 포함하는 div에 클릭 이벤트 핸들러(catchMethod) 제거
+            // 코로나 이미지 숨기지 말 것!!!
+            // 3)
+
+            
+
+        }
+    </script>  
+</head>
+<body>
+    <!-- HTML 태그 내용 변경 금지 -->
+    <h1>코로나를 잡아라 </h1>
+    <p>제한시간: <input type=text id=limit value=10> 목표 갯수 : <input type=text id=goal value=5></p>
+    <input type="button" value="Start Game" onclick = "start()">
+    <p>잡은 갯수 : <span id="cnt">0</span></p>
+    
+    <div id="region">
+
+    </div>
+    <div id="div">	
+        <img src="COVID.jpg" width=30 height=30 onclick="catchMethod(this)" >	
+    </div> 
+    
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3분반 1번</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Original+Surfer&display=swap');
+
+        body {
+            /* <body> 내 모든 글자에 구글 "Hi Melody" 폰트 적용하고 폰트 크기는 20px로 정의하시오. */
+                font-size: 20px;
+                font-family: 'Hi Melody', cursive;
+        }
+
+        section {
+            background-color: lightgray;
+            width: 270px; height: 100px;
+            border: 2px solid black;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        } 
+
+        div {
+            margin: 0px;
+            padding-top: 30px;padding-bottom: 30px;
+            padding-left: 0px;padding-right: 0px;
+            width: 30px; height: 30px;
+            border: 1px solid gray;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 3px 3px black;
+        }
+        @keyframes textColorAnimation {
+            0% { background-color : red; }
+            30% { background-color : yellow; } 
+            100% { background-color : purple; }
+        }
+
+        div:hover{
+            animation-name : textColorAnimation; 
+            animation-duration : 1s;
+            transform : translateX(3px);
+            transform : translateY(3px);
+            box-shadow: 0px 0px black;
+            background-color : purple;
+        }
+    </style>
+    <script>
+        /* 이름을 입력하는 다이얼로그를 띄우고,
+        입력되는 이름을 받아 "xxx님 반갑습니다." 와 구분선을
+        웹 페이지에 출력하는 스크립트 작성 
+        이때 이름은 <strong>태그로 굵게 쓰여져야 함. */
+            let ret = prompt("이름을 입력하세요");
+            document.write("<p><strong>" , ret ,"</strong>", "님 반갑습니다.</p><hr><br>");
+    </script>
+</head>
+<body> <!-- body 내용 변경 금지!!! -->
+    <section class="sec1">
+        <div class="dv1">도</div>
+        <div class="dv2">레</div>
+        <div class="dv3">미</div>
+        <div class="dv4">파</div>
+        <div class="dv5">솔</div>
+        <div class="dv6">라</div>
+        <div class="dv7">시</div>
+    </section>
+</body>
+</html>
