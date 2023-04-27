@@ -1,7 +1,8 @@
 
 ## 소개🎯
 
-- 대학 프로젝트 일환으로 HTML CSS Javascript를 활용하여 미니 대학 홈페이지를 만들어보았습니다.
+- 복잡한 대학 홈페이지 안내 항목 중 신입생에게 필요한 부분만 골라 미니 Version 타입으로 제작했습니다.
+- 개인 프로젝트 일환으로 HTML CSS Javascript를 사용하여 제작했습니다.
 
 ### 첫 페이지
 <img src="https://user-images.githubusercontent.com/76522430/234983211-3e61288f-b4ee-4565-902a-837e016f251a.png" width="600" height="400">
